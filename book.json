@@ -1,0 +1,14 @@
+{
+  "title": "Code Guide",
+  "description": "前端开发规范",
+  "language": "en",
+  "plugins": [
+    "page-footer-ex",
+    "prism"
+  ],
+  "pluginsConfig": {
+    "copyright":"kaike.la",
+    "update_label":"update: ",
+    "update_format":"YYYY-MM-DD HH:mm:ss"
+  }
+}
