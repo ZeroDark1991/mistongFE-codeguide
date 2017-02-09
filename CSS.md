@@ -171,7 +171,7 @@ type-block__element_modifier
 
 对应的HTML结构如下：
 
-``` html
+```
 <ul class="xxx">
     <li class="xxx__item">第一项
         <div class="xxx__product-name">我是名称</div>

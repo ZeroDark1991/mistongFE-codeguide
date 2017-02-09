@@ -8,7 +8,7 @@
 
  - 移动端定义viewport属性，一般定义格式如下,如果网站需要进行放大/缩小，需要根据实际情况定义scale的比例
 
- ```html
+ ```
  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;"
   name="viewport"/>
  ```

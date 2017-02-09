@@ -7,7 +7,7 @@
 不要在自动闭合标签结尾处使用斜线（[HTML5 规范](https://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag) 指出他们是可选的）；
 不要忽略可选的关闭标签，例：`</li> `和 `</body>`。
 
-```HTML
+```
 <!DOCTYPE html>
 <html>
     <head>
@@ -41,7 +41,7 @@
 
 通过声明一个明确的字符编码，让浏览器轻松、快速的确定适合网页内容的渲染方式，通常指定为'UTF-8'。
 
-```HTML
+```
 <!DOCTYPE html>
 <html>
     <head>
@@ -74,7 +74,7 @@
 
 不同doctype在不同浏览器下会触发不同的渲染模式（[这篇文章](https://hsivonen.fi/doctype/)总结的很到位）。
 
-```HTML
+```
 <!DOCTYPE html>
 <html>
     <head>
@@ -105,7 +105,7 @@
 
 id更加具体且应该尽量少使用，所以将它放在第二位。
 
-```HTML
+```
 <a class="..." id="..." data-modal="toggle" href="#">Example link</a>
 
 <input class="form-control" type="text">
@@ -121,7 +121,7 @@ boolean属性指不需要声明取值的属性，XHTML需要每个属性声明�
 
 > boolean属性的存在表示取值为true，不存在则表示取值为false。
 
-```HTML
+```
 <input type="text" disabled>
 
 <input type="checkbox" value="1" checked>
