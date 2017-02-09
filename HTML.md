@@ -54,9 +54,14 @@
 ## SEO友好
 
 ```
-<title>网页标题</title>/* 必须要有 */
-<meta name="keywords" content="网页关键字">/* 不是必须有 */
-<meta name="description" content="网页主要内容描述">/* 建议有 */
+/* 必须要有 */
+<title>网页标题</title>
+
+/* 不是必须有 */
+<meta name="keywords" content="网页关键字">
+
+/* 建议有 */
+<meta name="description" content="网页主要内容描述">
  
 /* favicon图标 */
 <link rel="shortcut icon" href="/favicon.ico">
