@@ -53,12 +53,17 @@
 
 BEM代表“块（block）,元素（element）,修饰符（modifier）”, 常用这三个实体开发组件。
 
+参考:
+
+ - [BEM Naming](http://getbem.com/naming/) 
+ - [BEM的优势](http://www.cnblogs.com/dujishi/p/5862911.html)
+
 在选择器中，由以下三种符合来表示扩展的关系：
 
 ```
 -   中划线 ：仅作为连字符使用，表示某个块或者某个子元素的多单词之间的连接记号。
 __  双下划线：双下划线用来连接块和块的子元素
-_   单下划线：单下划线用来描述一个块或者块的子元素的一种状态
+_   单下划线：单下划线用来描述一个块或者块的子元素的一种状态(modifier的写法略有不同)
 
 type-block__element_modifier
 ```
