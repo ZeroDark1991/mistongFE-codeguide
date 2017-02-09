@@ -1,5 +1,52 @@
 # CSS
 
+## 语法
+
+ - 为选择器分组时，将单独的选择器单独放在一行。
+
+ - 为了代码的易读性，在每个声明块的左花括号前添加一个空格。
+
+ - 声明块的右花括号应当单独成行。
+
+ - 每条声明语句的 : 后应该插入一个空格。
+
+ - 为了获得更准确的错误报告，每条声明都应该独占一行。
+
+ - 所有声明语句都应当以分号结尾。最后一条声明语句后面的分号是可选的，但是，如果省略这个分号，你的代码可能更易出错。
+
+ - 对于以逗号分隔的属性值，每个逗号后面都应该插入一个空格（例如，box-shadow）。
+
+ - 不要在 rgb()、rgba()、hsl()、hsla() 或 rect() 值的内部的逗号后面插入空格。这样利于从多个属性值（既加逗号也加空格）中区分多个颜色值（只加逗号，不加空格）。
+
+ - 对于属性值或颜色参数，省略小于 1 的小数前面的 0 （例如，.5 代替 0.5；-.5px 代替 -0.5px）。
+
+ - 十六进制值应该全部小写，例如，#fff。在扫描文档时，小写字符易于分辨，因为他们的形式更易于区分。
+
+ - 尽量使用简写形式的十六进制值，例如，用 #fff 代替 #ffffff。
+为选择器中的属性添加双引号，例如，input[type="text"]。只有在某些情况下是可选的，但是，为了代码的一致性，建议都加上双引号。
+
+ - 避免为 0 值指定单位，例如，用 margin: 0; 代替 margin: 0px;。
+
+```css
+/* Bad CSS */
+.selector, .selector-secondary, .selector[type=text] {
+  padding:15px;
+  margin:0px 0px 15px;
+  background-color:rgba(0, 0, 0, 0.5);
+  box-shadow:0px 1px 2px #CCC,inset 0 1px 0 #FFFFFF
+}
+
+/* Good CSS */
+.selector,
+.selector-secondary,
+.selector[type="text"] {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
+}
+```
+
 ## 命名 [BEM 规范]
 
 使用[ BEM ](https://en.bem.info/)命名规范，理论上讲，每行 css 代码都只有一个选择器。
@@ -263,8 +310,15 @@ li[data-type="single"] {
 
 ## 属性声明顺序
 
-相关的属性声明按右边的顺序做分组处理，组之间需要有一个空行。
+相关的属性声明应当归为一组，并按照下面的顺序排列：
 
+Positioning
+Box model
+Typographic
+Visual
+由于定位（positioning）可以从正常的文档流中移除元素，并且还能覆盖盒模型（box model）相关的样式，因此排在首位。盒模型排在第二位，因为它决定了组件的尺寸和位置。
+
+其他属性只是影响组件的内部（inside）或者是不影响前两组属性，因此排在后面。
 
 ```
 .declaration-order {

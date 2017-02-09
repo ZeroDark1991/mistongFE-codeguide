@@ -4,11 +4,15 @@
   "language": "en",
   "plugins": [
     "page-footer-ex",
-    "prism"
+    "prism",
+    "anchor-navigation-ex"
   ],
   "pluginsConfig": {
     "copyright":"kaike.la",
     "update_label":"update: ",
-    "update_format":"YYYY-MM-DD HH:mm:ss"
+    "update_format":"YYYY-MM-DD HH:mm:ss",
+    "anchor-navigation-ex":{
+      "isRewritePageTitle": false
+    }  
   }
 }

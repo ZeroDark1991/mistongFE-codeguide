@@ -51,6 +51,21 @@
 </html>
 ```
 
+## SEO友好
+
+```
+<title>网页标题</title>/* 必须要有 */
+<meta name="keywords" content="网页关键字">/* 不是必须有 */
+<meta name="description" content="网页主要内容描述">/* 建议有 */
+ 
+/* favicon图标 */
+<link rel="shortcut icon" href="/favicon.ico">
+```
+添加适当关键字在html代码里.img图片要加上alt标签
+
+学习使用h1,h2,h3,h4等SEO权重较高的标签
+
+
 ## IE兼容模式
 
 用 `<meta>` 标签可以指定页面应该用什么版本的IE来渲染；
@@ -63,7 +78,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="renderer" content="webkit">
     </head>
     ...
 </html>
