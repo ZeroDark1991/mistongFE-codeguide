@@ -7,6 +7,8 @@
 * [通用指南](Dev-General.md)
 * [命名规则](Name.md)
 * [项目结构](Structure.md)
+* [提交规范](CommitRules.md)
+* [发布管理](Gitflow.md)
 
 ## 代码风格
 
